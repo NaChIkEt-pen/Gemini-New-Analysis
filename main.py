@@ -4,8 +4,8 @@ import google.generativeai as genai
 # Streamlit app
 st.title("News Article Analysis with Google Gemini API")
 
-# Gemini API key input
-gemini_api_key = st.text_input("Enter your Gemini API key:", type="password")
+# Automatically fetch API key from secrets
+gemini_api_key = st.secrets["GEMINI_API_KEY"]
 
 # News article input
 news_article = st.text_area("Paste your news article here:", height=200)
@@ -17,9 +17,7 @@ analysis_type = st.selectbox(
 )
 
 if st.button("Analyze"):
-    if not gemini_api_key:
-        st.error("Please enter your Gemini API key.")
-    elif not news_article:
+    if not news_article:
         st.error("Please paste a news article.")
     else:
         try:
