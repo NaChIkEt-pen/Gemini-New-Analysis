@@ -95,5 +95,5 @@ The project aims to use Google's cutting-edge technologies to evaluate news arti
 
 4. Run the application:
    ```
-   streamlit run app.py
+   streamlit run main.py
    ```
