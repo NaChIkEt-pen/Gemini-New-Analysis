@@ -77,8 +77,13 @@ The project aims to use Google's cutting-edge technologies to evaluate news arti
 
 2. Navigate to the project directory and install dependencies:
 
-   a. cd Gemini-New-Analysis  
-   b. pip install -r requirements.txt
+   ```
+   cd Gemini-New-Analysis
+   ```
+
+   s```
+   pip install -r requirements.txt
+   ```
 
 3. Add your API keys to the secrets.toml file:
 
