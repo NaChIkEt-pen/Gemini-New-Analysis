@@ -81,7 +81,7 @@ The project aims to use Google's cutting-edge technologies to evaluate news arti
    cd Gemini-New-Analysis
    ```
 
-   s```
+   ```
    pip install -r requirements.txt
    ```
 
